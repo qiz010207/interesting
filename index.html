@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .box {
+                background-color: rgb(182, 234, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .myList {
+                font-size: 0;
+                display: flex;
+                flex-wrap: wrap; /* 超过宽度换行 */
+                width: 100%;
+                max-width: 1000px;
+                margin: 0 auto; /* 水平居中 */
+                justify-content: center;
+            }
+
+            li {
+                list-style: none;
+                display: inline-block;
+                font-size: 30px;
+                transition: color 0.3s ease-in-out; /* 添加过渡效果 */
+            }
+
+            .Light {
+                color: #595757;
+            }
+            .Dark {
+                color: #ff6600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <ul class="myList"></ul>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
